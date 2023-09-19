@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ReviewController!
+{% endblock %}
+
+{% block body %}
+	<style>
+		.example-wrapper {
+			margin: 1em auto;
+			max-width: 800px;
+			width: 95%;
+			font: 18px / 1.5 sans-serif;
+		}
+		.example-wrapper code {
+			background: #F5F5F5;
+			padding: 2px 6px;
+		}
+	</style>
+
+	<h1>review</h1>
+
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Description</th>
+				<th>Date</th>
+
+
+			</tr>
+		</thead>
+		<tbody>
+
+
+			<tr>
+				<td>2</td>
+				<td>avis 2</td>
+				<td>ceci est un tres long avis</td>
+				<td>23/06/2023</td>
+
+
+			</tr>
+
+
+		</tbody>
+	</table>
+	<a class='btn' href="{{ path('app_home') }}">home</a>
+
+{% endblock %}
